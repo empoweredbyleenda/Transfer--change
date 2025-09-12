@@ -41,6 +41,41 @@ const Gallery = () => {
       alt: "Food and snack distribution",
       category: "Emergency Relief",
       description: "Volunteers organizing food and snacks for families in need during community outreach"
+    },
+    {
+      id: 6,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/v600xabl_IMG_6867.jpeg",
+      alt: "Community Closet volunteers organizing supplies",
+      category: "Community Closet",
+      description: "Volunteers working together to organize clothing and supplies for families in need"
+    },
+    {
+      id: 7,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/obhcy0uw_IMG_6877.png",
+      alt: "Community distribution event",
+      category: "Community Outreach",
+      description: "Volunteers distributing essential items to community members at our outreach event"
+    },
+    {
+      id: 8,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/0bh40m7b_IMG_6874.jpeg",
+      alt: "Behind-the-scenes organization",
+      category: "Behind the Scenes",
+      description: "The organization and preparation work that makes our community programs possible"
+    },
+    {
+      id: 9,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/bufoxooj_IMG_4115.jpeg",
+      alt: "Pray for Los Angeles - Emergency Response",
+      category: "Emergency Relief",
+      description: "Supporting our Los Angeles community during times of crisis and natural disasters"
+    },
+    {
+      id: 10,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/eyvhnyb9_IMG_4049.jpeg",
+      alt: "Fire emergency response",
+      category: "Emergency Relief",
+      description: "Responding to emergency situations and providing aid to families affected by disasters"
     }
   ];
 
