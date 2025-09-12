@@ -72,7 +72,8 @@ const Programs = () => {
                   <img
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-110"
+                    style={program.title === "Youth Empowerment" ? { objectPosition: '50% 30%' } : {}}
                   />
                   <div className="absolute top-4 left-4">
                     <div className="w-12 h-12 bg-white/90 rounded-full flex items-center justify-center">
