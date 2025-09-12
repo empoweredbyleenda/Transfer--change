@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Heart, HandHeart, Share2, DollarSign, Clock, Users, Mail } from "lucide-react";
+import { Heart, HandHeart, Share2, DollarSign, Clock, Users, Mail, Gift } from "lucide-react";
 
 const HowToHelp = () => {
   const [donationAmount, setDonationAmount] = useState(50);
