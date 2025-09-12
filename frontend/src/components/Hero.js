@@ -7,8 +7,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/k5ncgcv6_IMG_1286.jpeg"
-          alt="Community Impact"
+          src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/obhcy0uw_IMG_6877.png"
+          alt="Community volunteers distributing supplies"
           className="w-full h-full object-cover"
         />
         <div className="hero-overlay absolute inset-0"></div>
