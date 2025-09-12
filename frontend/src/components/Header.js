@@ -19,10 +19,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
-              <Heart className="w-6 h-6 text-white" />
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/wk84hkl3_IMG_0996_Original.png"
+              alt="Snatched Beauties Logo"
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-gray-900">Snatched Beauties</h1>
               <p className="text-sm text-gray-600">Changing Lives</p>
