@@ -62,13 +62,6 @@ const Gallery = () => {
       alt: "Educational resource distribution",
       category: "Educational Support",
       description: "Volunteers in Changing Lives shirts providing educational resources and materials"
-    },
-    {
-      id: 9,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/obhcy0uw_IMG_6877.png",
-      alt: "Community distribution tent event",
-      category: "Community Outreach",
-      description: "Large-scale community distribution event with volunteers distributing essential items"
     }
   ];
 
