@@ -109,9 +109,34 @@ const Contact = () => {
                         {info.details.map((detail, detailIndex) => (
                           <p key={detailIndex} className="text-gray-600 mb-1">{detail}</p>
                         ))}
-                        <button className="text-purple-600 hover:text-purple-700 font-medium text-sm mt-2">
-                          {info.action} →
-                        </button>
+                        {info.title === "Call Us" ? (
+                          <a 
+                            href="tel:323-613-5153" 
+                            className="text-purple-600 hover:text-purple-700 font-medium text-sm mt-2 inline-block"
+                          >
+                            {info.action} →
+                          </a>
+                        ) : info.title === "Email Us" ? (
+                          <a 
+                            href="mailto:info@snatchedbeautieschanginglives.org" 
+                            className="text-purple-600 hover:text-purple-700 font-medium text-sm mt-2 inline-block"
+                          >
+                            {info.action} →
+                          </a>
+                        ) : info.title === "Visit Us" ? (
+                          <a 
+                            href="https://maps.google.com/?q=5710+W+Manchester+Ave+Suite+211+B+Los+Angeles+CA+90045" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-purple-600 hover:text-purple-700 font-medium text-sm mt-2 inline-block"
+                          >
+                            {info.action} →
+                          </a>
+                        ) : (
+                          <button className="text-purple-600 hover:text-purple-700 font-medium text-sm mt-2">
+                            {info.action} →
+                          </button>
+                        )}
                       </div>
                     </div>
                   </div>
