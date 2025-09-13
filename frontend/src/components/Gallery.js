@@ -69,13 +69,6 @@ const Gallery = () => {
       alt: "Community distribution tent event",
       category: "Community Outreach",
       description: "Large-scale community distribution event with volunteers distributing essential items"
-    },
-    {
-      id: 11,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/zslphu76_IMG_1288.jpeg",
-      alt: "Happy child with school supplies",
-      category: "Youth Impact",
-      description: "A bright smile shows the joy of receiving educational support and encouragement"
     }
   ];
 
