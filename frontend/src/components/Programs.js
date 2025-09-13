@@ -68,7 +68,7 @@ const Programs = () => {
                 key={index}
                 className="card-hover bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
               >
-                <div className="relative h-56 overflow-hidden bg-gray-100">
+                <div className="relative h-56 overflow-hidden bg-gray-100 watermarked-image">
                   <img
                     src={program.image}
                     alt={program.title}
