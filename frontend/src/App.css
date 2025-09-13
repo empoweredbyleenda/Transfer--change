@@ -87,7 +87,7 @@ html {
 }
 
 .gallery-item {
-  @apply relative overflow-hidden rounded-xl cursor-pointer group;
+  @apply relative overflow-hidden rounded-xl cursor-pointer;
 }
 
 .gallery-overlay {
