@@ -16,13 +16,6 @@ const Gallery = () => {
     },
     {
       id: 2,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/xha3lbf5_IMG_0410.jpeg",
-      alt: "Community members receiving support",
-      category: "Community Outreach",
-      description: "Community members receiving essential supplies and support from our programs"
-    },
-    {
-      id: 3,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/kafbm3va_IMG_0310.jpeg",
       alt: "Corporate sponsors and community partners",
       category: "Partnerships",
