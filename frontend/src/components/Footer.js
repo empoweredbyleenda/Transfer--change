@@ -56,13 +56,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/xs2iz9cs_Changing%20Lives.png"
+                src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/429zi153_Changing%20Lives.jpeg"
                 alt="Changing Lives Logo"
-                className="w-12 h-12 object-cover object-center"
-                style={{ 
-                  clipPath: 'inset(15% 15% 15% 15%)',
-                  transform: 'scale(1.2)'
-                }}
+                className="w-12 h-12 object-contain"
               />
               <div>
                 <h3 className="text-xl font-bold">Changing Lives</h3>
