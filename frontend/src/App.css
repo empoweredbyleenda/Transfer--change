@@ -2,28 +2,28 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Custom CSS for adventure travel theme */
+/* Professional coaching website theme */
 html {
   scroll-behavior: smooth;
 }
 
-.adventure-gradient {
-  background: linear-gradient(135deg, #059669 0%, #d97706 50%, #0284c7 100%);
+.coaching-gradient {
+  background: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 50%, #e5e7eb 100%);
 }
 
-.text-adventure {
-  background: linear-gradient(135deg, #059669 0%, #d97706 50%, #0284c7 100%);
+.text-coaching {
+  background: linear-gradient(135deg, #7c3aed 0%, #ec4899 50%, #6b7280 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero-overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
 }
 
-.earth-shadow {
-  box-shadow: 0 10px 40px -12px rgba(5, 150, 105, 0.3);
+.professional-shadow {
+  box-shadow: 0 10px 40px -12px rgba(124, 58, 237, 0.2);
 }
 
 .card-hover {
@@ -31,72 +31,60 @@ html {
 }
 
 .card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
 }
 
-.btn-adventure {
-  @apply bg-gradient-to-r from-emerald-500 to-orange-500 hover:from-emerald-600 hover:to-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
+.btn-primary {
+  @apply bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
 }
 
-.btn-earth {
-  @apply bg-gradient-to-r from-blue-500 to-emerald-500 hover:from-blue-600 hover:to-emerald-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300;
+.btn-secondary {
+  @apply bg-white border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300;
 }
 
-.btn-outline {
-  @apply bg-transparent border-2 border-emerald-500 text-emerald-600 hover:bg-emerald-500 hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-300;
+.btn-accent {
+  @apply bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300;
 }
 
 .section-padding {
-  @apply py-20 px-4 sm:px-6 lg:px-8;
+  @apply py-16 px-4 sm:px-6 lg:px-8;
 }
 
-/* Language selector styles */
-.language-selector {
-  @apply relative inline-block;
+/* Service card styles */
+.service-card {
+  @apply bg-white rounded-xl shadow-lg border border-gray-100 p-6 card-hover;
 }
 
-.language-dropdown {
-  @apply absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 z-50;
+.service-icon {
+  @apply w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-4;
 }
 
-.language-item {
-  @apply px-4 py-3 hover:bg-emerald-50 cursor-pointer transition-colors duration-200 flex items-center space-x-3;
+/* Professional testimonial styles */
+.testimonial-card {
+  @apply bg-white rounded-2xl p-8 shadow-lg border border-gray-100 relative;
 }
 
-.language-item:first-child {
-  @apply rounded-t-lg;
+.testimonial-quote {
+  @apply text-4xl text-purple-300 absolute top-4 left-6;
 }
 
-.language-item:last-child {
-  @apply rounded-b-lg;
+/* Pricing styles */
+.pricing-card {
+  @apply bg-white rounded-2xl shadow-xl border-2 p-8 relative overflow-hidden;
 }
 
-/* Experience card styles */
-.experience-card {
-  @apply bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 card-hover;
+.pricing-featured {
+  @apply border-purple-500 transform scale-105;
 }
 
-.experience-overlay {
-  background: linear-gradient(45deg, rgba(5, 150, 105, 0.9), rgba(217, 119, 6, 0.8));
-}
-
-/* Gallery styles */
-.gallery-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
-}
-
-.gallery-item {
-  @apply relative overflow-hidden rounded-xl cursor-pointer;
-}
-
-.gallery-overlay {
-  @apply absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+.pricing-badge {
+  @apply absolute top-0 right-0 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-bl-lg text-sm font-medium;
 }
 
 /* Animation classes */
 .fade-in {
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 0.8s ease-in;
 }
 
 @keyframes fadeIn {
@@ -117,7 +105,7 @@ html {
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-30px);
   }
   to {
     opacity: 1;
@@ -132,7 +120,7 @@ html {
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(30px);
   }
   to {
     opacity: 1;
@@ -141,7 +129,7 @@ html {
 }
 
 .bounce-in {
-  animation: bounceIn 1.2s ease-out;
+  animation: bounceIn 1s ease-out;
 }
 
 @keyframes bounceIn {
@@ -162,21 +150,27 @@ html {
   }
 }
 
-/* Responsive text sizes */
-@screen sm {
-  .hero-title {
-    @apply text-5xl;
-  }
+/* Professional form styles */
+.form-input {
+  @apply w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-500 focus:outline-none transition-colors;
 }
 
-@screen lg {
-  .hero-title {
-    @apply text-6xl;
-  }
+.form-textarea {
+  @apply w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-500 focus:outline-none transition-colors resize-none;
 }
 
-@screen xl {
+/* Trust indicators */
+.trust-badge {
+  @apply flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-md;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
   .hero-title {
-    @apply text-7xl;
+    @apply text-3xl;
+  }
+  
+  .section-padding {
+    @apply py-12 px-4;
   }
 }
