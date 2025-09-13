@@ -25,8 +25,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-200">
-            Empowering underserved youth, families, and individuals in Los Angeles because we believe 
-            every life deserves the opportunity to flourish and reach its full potential.
+            Empowering underserved youth, families, and individuals nationwide with LA County as our home base, 
+            because we believe every life deserves the opportunity to flourish and reach its full potential.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
