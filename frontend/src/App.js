@@ -5,11 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Components
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Mission from "./components/Mission";
-import Programs from "./components/Programs";
+import Experiences from "./components/Experiences";
 import Gallery from "./components/Gallery";
-import Impact from "./components/Impact";
-import HowToHelp from "./components/HowToHelp";
+import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -18,11 +16,9 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <Mission />
-      <Programs />
+      <Experiences />
       <Gallery />
-      <Impact />
-      <HowToHelp />
+      <About />
       <Contact />
       <Footer />
     </div>
