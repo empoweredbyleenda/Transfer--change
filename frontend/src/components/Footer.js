@@ -56,13 +56,13 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/wk84hkl3_IMG_0996_Original.png"
-                alt="Snatched Beauties Logo"
+                src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/xs2iz9cs_Changing%20Lives.png"
+                alt="Changing Lives Logo"
                 className="w-12 h-12 object-contain"
               />
               <div>
-                <h3 className="text-xl font-bold">Snatched Beauties</h3>
-                <p className="text-sm text-gray-400">Changing Lives</p>
+                <h3 className="text-xl font-bold">Changing Lives</h3>
+                <p className="text-sm text-gray-400">Snatched Beauties</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
