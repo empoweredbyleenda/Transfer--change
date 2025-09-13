@@ -69,9 +69,21 @@ const HowToHelp = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{way.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{way.description}</p>
-                <button className="btn-primary w-full">
-                  {way.action}
-                </button>
+                {way.title === "Make a Donation" && (
+                  <a href="#donate" className="btn-primary w-full block text-center">
+                    {way.action}
+                  </a>
+                )}
+                {way.title === "Volunteer Your Time" && (
+                  <a href="#volunteer" className="btn-primary w-full block text-center">
+                    {way.action}
+                  </a>
+                )}
+                {way.title === "Spread the Word" && (
+                  <a href="#contact" className="btn-primary w-full block text-center">
+                    {way.action}
+                  </a>
+                )}
               </div>
             );
           })}
