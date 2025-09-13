@@ -52,8 +52,8 @@ const Hero = () => {
             <div className="slide-in-right">
               <div className="relative rounded-2xl overflow-hidden professional-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Professional coaching session"
+                  src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/i0er0vi4_IMG_2014.jpeg"
+                  alt="Leenda Bolden - Professional Coach"
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="hero-overlay absolute inset-0"></div>
