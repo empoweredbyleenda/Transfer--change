@@ -7,14 +7,14 @@ const Programs = () => {
       icon: BookOpen,
       title: "Back-to-School Drives",
       description: "Providing essential school supplies, backpacks, and educational materials to ensure every child has the tools they need to succeed in their educational journey.",
-      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/zslphu76_IMG_1288.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/k5ncgcv6_IMG_1286.jpeg",
       features: ["School Supplies", "Backpacks", "Educational Materials", "Academic Support"]
     },
     {
       icon: ShoppingBag,
       title: "Community Closet",
       description: "A beacon of hope offering clothing and necessities to families in need, ensuring everyone has access to basic essentials with dignity and respect.",
-      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/tz1zgq08_IMG_1315.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/v600xabl_IMG_6867.jpeg",
       features: ["Clothing Distribution", "Basic Necessities", "Family Support", "Dignity & Respect"]
     },
     {
@@ -28,22 +28,22 @@ const Programs = () => {
       icon: Home,
       title: "Emergency Relief",
       description: "Rapid response support for families impacted by disasters, providing financial aid, emotional counseling, and essential supplies during their time of greatest need.",
-      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/9f7vzw7l_IMG_1289.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/3h1ox29h_IMG_8501.jpeg",
       features: ["Disaster Response", "Financial Aid", "Emotional Support", "Essential Supplies"]
     },
     {
       icon: Heart,
-      title: "Mental Health & Wellness",
-      description: "Comprehensive mental health resources and wellness programs that support emotional healing and build resilience in our community members.",
-      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/k5ncgcv6_IMG_1286.jpeg",
-      features: ["Counseling Services", "Wellness Programs", "Emotional Support", "Community Healing"]
+      title: "Health & Wellness",
+      description: "Comprehensive health resources and wellness programs including mask distribution and health supplies that support community well-being and safety.",
+      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/x7uj2son_IMG_4768.jpeg",
+      features: ["Health Supplies", "Wellness Programs", "Safety Equipment", "Community Health"]
     },
     {
       icon: Users,
-      title: "Youth Empowerment",
-      description: "Dedicated programs that empower young people with resources, mentorship, and opportunities to reach their full potential and become community leaders.",
-      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/zslphu76_IMG_1288.jpeg",
-      features: ["Mentorship", "Leadership Development", "Educational Support", "Life Skills"]
+      title: "Community Partnerships",
+      description: "Building powerful partnerships with corporations, fire departments, and community organizations to maximize our impact and reach more families in need.",
+      image: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/i31wg596_IMG_0455.jpeg",
+      features: ["Corporate Partners", "Emergency Services", "Volunteer Groups", "Community Collaboration"]
     }
   ];
 
