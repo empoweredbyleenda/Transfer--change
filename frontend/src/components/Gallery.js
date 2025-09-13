@@ -37,10 +37,17 @@ const Gallery = () => {
     },
     {
       id: 5,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/dji4wm2h_IMG_4041.jpeg",
-      alt: "Fire aftermath and emergency response",
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/pacf2mi3_IMG_3976.jpeg",
+      alt: "#LAFires - Emergency Response Context",
       category: "Emergency Relief",
-      description: "Responding to fire emergencies and providing aid to families affected by disasters"
+      description: "The devastating LA fires that prompted our emergency response efforts to help affected families"
+    },
+    {
+      id: 6,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/mwcamhwu_IMG_4040.jpeg",
+      alt: "Fire aftermath and destruction",
+      category: "Emergency Relief",
+      description: "The devastating aftermath of LA fires showing why our emergency relief programs are so critical"
     },
     {
       id: 6,
