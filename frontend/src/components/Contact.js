@@ -54,7 +54,7 @@ const Contact = () => {
     {
       icon: Facebook,
       name: "Facebook",
-      url: "https://www.facebook.com/people/Snatched-Beauties-Changing-Lives-Non-Profit/61572380875090/",
+      url: "https://www.facebook.com/profile.php?id=61572380875090",
       color: "text-blue-600 hover:text-blue-700"
     },
     {
@@ -66,13 +66,13 @@ const Contact = () => {
     {
       icon: Instagram,
       name: "Instagram",
-      url: "https://www.instagram.com/snatched_beauties/",
+      url: "https://www.instagram.com/sb_changinglives?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr",
       color: "text-pink-600 hover:text-pink-700"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://www.linkedin.com/company/changing-lives-nonprofit",
+      url: "https://www.linkedin.com/in/changinglivesla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       color: "text-blue-700 hover:text-blue-800"
     }
   ];
