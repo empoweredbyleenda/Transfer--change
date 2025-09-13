@@ -58,7 +58,11 @@ const Footer = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/xs2iz9cs_Changing%20Lives.png"
                 alt="Changing Lives Logo"
-                className="w-12 h-12 object-contain"
+                className="w-12 h-12 object-cover object-center"
+                style={{ 
+                  clipPath: 'inset(15% 15% 15% 15%)',
+                  transform: 'scale(1.2)'
+                }}
               />
               <div>
                 <h3 className="text-xl font-bold">Changing Lives</h3>
