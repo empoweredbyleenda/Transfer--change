@@ -34,7 +34,7 @@ const Mission = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Changing Lives is built on the belief that everyone deserves a chance to thrive. 
-            We are committed to making a lasting impact in our Los Angeles community.
+            We are committed to making a lasting impact nationwide, with LA County as our home base.
           </p>
         </div>
 
