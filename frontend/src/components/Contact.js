@@ -72,7 +72,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/company/changing-lives-nonprofit",
       color: "text-blue-700 hover:text-blue-800"
     }
   ];
