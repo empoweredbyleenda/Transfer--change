@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["(Coming Soon)", "Available during business hours"],
+      details: ["(323) 613-5153", "Available during business hours"],
       action: "Call Now"
     },
     {
