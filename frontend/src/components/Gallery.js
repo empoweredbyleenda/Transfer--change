@@ -156,7 +156,7 @@ const Gallery = () => {
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer card-hover bg-gray-100"
+              className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer card-hover bg-gray-100 gallery-watermarked"
               onClick={() => openModal(image, index)}
             >
               <div className="relative h-64 bg-gray-100 flex items-center justify-center">
