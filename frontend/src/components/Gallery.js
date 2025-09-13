@@ -78,25 +78,11 @@ const Gallery = () => {
       description: "Large-scale community distribution event with volunteers distributing essential items"
     },
     {
-      id: 10,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/0bh40m7b_IMG_6874.jpeg",
-      alt: "Behind-the-scenes organization",
-      category: "Behind the Scenes",
-      description: "The organization and preparation work that makes our community programs possible"
-    },
-    {
       id: 11,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/zslphu76_IMG_1288.jpeg",
       alt: "Happy child with school supplies",
       category: "Youth Impact",
       description: "A bright smile shows the joy of receiving educational support and encouragement"
-    },
-    {
-      id: 12,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/s7610mdy_IMG_6517.jpeg",
-      alt: "Fire Department collaboration with food donations",
-      category: "Emergency Relief",
-      description: "Working alongside LA Fire Department heroes to provide food and essential supplies during emergencies"
     }
   ];
 
