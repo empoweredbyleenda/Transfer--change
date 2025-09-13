@@ -16,66 +16,101 @@ const Gallery = () => {
     },
     {
       id: 2,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/zslphu76_IMG_1288.jpeg",
-      alt: "Happy child with school supplies",
-      category: "Youth Empowerment",
-      description: "A bright smile shows the joy of receiving educational support and encouragement"
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/m7syjxil_IMG_0414.jpeg",
+      alt: "Professional volunteer at community event",
+      category: "Team & Volunteers",
+      description: "Dedicated team member at a Snatched Beauties community outreach event"
     },
     {
       id: 3,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/xha3lbf5_IMG_0410.jpeg",
+      alt: "Community members receiving support",
+      category: "Community Outreach",
+      description: "Community members receiving essential supplies and support from our programs"
+    },
+    {
+      id: 4,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/i31wg596_IMG_0455.jpeg",
+      alt: "Large volunteer group at community event",
+      category: "Partnerships",
+      description: "Amazing collaboration with volunteers from multiple organizations working together to serve our community"
+    },
+    {
+      id: 5,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/kafbm3va_IMG_0310.jpeg",
+      alt: "Corporate sponsors and community partners",
+      category: "Partnerships",
+      description: "Proud partnerships with Eisner Health, Cane's, TopGolf, Thrive Market, and many other supporters"
+    },
+    {
+      id: 6,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/x7uj2son_IMG_4768.jpeg",
+      alt: "Health initiative - mask distribution",
+      category: "Health Initiatives",
+      description: "Volunteers distributing 3M masks and health supplies to families during health initiatives"
+    },
+    {
+      id: 7,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/o9ihmsce_IMG_4115.jpeg",
+      alt: "Pray for Los Angeles - Emergency Response",
+      category: "Emergency Relief",
+      description: "Supporting our Los Angeles community during times of crisis and natural disasters"
+    },
+    {
+      id: 8,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/dji4wm2h_IMG_4041.jpeg",
+      alt: "Fire aftermath and emergency response",
+      category: "Emergency Relief",
+      description: "Responding to fire emergencies and providing aid to families affected by disasters"
+    },
+    {
+      id: 9,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/3h1ox29h_IMG_8501.jpeg",
+      alt: "LA Fire Department partnership - loading supplies",
+      category: "Emergency Relief",
+      description: "Partnering with LA Fire Department to distribute emergency supplies to affected families"
+    },
+    {
+      id: 10,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/s7610mdy_IMG_6517.jpeg",
+      alt: "Fire Department collaboration with food donations",
+      category: "Emergency Relief",
+      description: "Working alongside LA Fire Department heroes to provide food and essential supplies during emergencies"
+    },
+    {
+      id: 11,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/tz1zgq08_IMG_1315.jpeg",
       alt: "Volunteers distributing supplies",
       category: "Community Outreach",
       description: "Our dedicated volunteers helping families during a community distribution event"
     },
     {
-      id: 4,
+      id: 12,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/9f7vzw7l_IMG_1289.jpeg",
-      alt: "Community members receiving educational materials",
+      alt: "Educational resource distribution",
       category: "Educational Support",
-      description: "Providing educational resources and materials to support student success"
+      description: "Volunteers in Snatched Beauties shirts providing educational resources and materials"
     },
     {
-      id: 5,
+      id: 13,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/4t9qxvac_IMG_1355.jpeg",
       alt: "Food and snack distribution",
-      category: "Emergency Relief",
+      category: "Food Programs",
       description: "Volunteers organizing food and snacks for families in need during community outreach"
     },
     {
-      id: 6,
+      id: 14,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/v600xabl_IMG_6867.jpeg",
       alt: "Community Closet volunteers organizing supplies",
       category: "Community Closet",
       description: "Volunteers working together to organize clothing and supplies for families in need"
     },
     {
-      id: 7,
+      id: 15,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/obhcy0uw_IMG_6877.png",
-      alt: "Community distribution event",
+      alt: "Community distribution tent event",
       category: "Community Outreach",
-      description: "Volunteers distributing essential items to community members at our outreach event"
-    },
-    {
-      id: 8,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/0bh40m7b_IMG_6874.jpeg",
-      alt: "Behind-the-scenes organization",
-      category: "Behind the Scenes",
-      description: "The organization and preparation work that makes our community programs possible"
-    },
-    {
-      id: 9,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/bufoxooj_IMG_4115.jpeg",
-      alt: "Pray for Los Angeles - Emergency Response",
-      category: "Emergency Relief",
-      description: "Supporting our Los Angeles community during times of crisis and natural disasters"
-    },
-    {
-      id: 10,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/eyvhnyb9_IMG_4049.jpeg",
-      alt: "Fire emergency response",
-      category: "Emergency Relief",
-      description: "Responding to emergency situations and providing aid to families affected by disasters"
+      description: "Large-scale community distribution event with volunteers distributing essential items"
     }
   ];
 
