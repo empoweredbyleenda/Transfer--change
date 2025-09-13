@@ -91,7 +91,7 @@ const HowToHelp = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Donation Form */}
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
+          <div id="donate" className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
             <div className="text-center mb-8">
               <Heart className="w-12 h-12 text-purple-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Make a Donation</h3>
