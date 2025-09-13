@@ -1,76 +1,115 @@
 import React, { useState } from "react";
-import { X, ChevronLeft, ChevronRight, Camera } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, MapPin, Calendar, Filter } from "lucide-react";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeFilter, setActiveFilter] = useState("All");
 
-  // Using UNIQUE photos that are NOT used in Programs section
   const galleryImages = [
     {
       id: 1,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/m7syjxil_IMG_0414.jpeg",
-      alt: "Professional volunteer at community event",
-      category: "Team & Volunteers",
-      description: "Dedicated team member at a Changing Lives community outreach event"
+      src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Mountain Adventure in Nepal",
+      category: "Mountains",
+      location: "Nepal",
+      year: "2023"
     },
     {
       id: 2,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/kafbm3va_IMG_0310.jpeg",
-      alt: "Corporate sponsors and community partners",
-      category: "Partnerships",
-      description: "Proud partnerships with Eisner Health, Cane's, TopGolf, Thrive Market, and many other supporters"
+      src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Tropical Paradise Maldives",
+      category: "Ocean",
+      location: "Maldives",
+      year: "2023"
+    },
+    {
+      id: 3,
+      src: "https://images.unsplash.com/photo-1539650116574-75c0c6d73313?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Cultural Festival Peru",
+      category: "Culture",
+      location: "Peru",
+      year: "2023"
     },
     {
       id: 4,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/o9ihmsce_IMG_4115.jpeg",
-      alt: "Pray for Los Angeles - Emergency Response",
-      category: "Emergency Relief",
-      description: "Supporting our Los Angeles community during times of crisis and natural disasters"
+      src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Amazon Rainforest",
+      category: "Forest",
+      location: "Brazil",
+      year: "2023"
     },
     {
       id: 5,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/pacf2mi3_IMG_3976.jpeg",
-      alt: "#LAFires - Emergency Response Context",
-      category: "Emergency Relief",
-      description: "The devastating LA fires that prompted our emergency response efforts to help affected families"
+      src: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "London City Exploration",
+      category: "City",
+      location: "UK",
+      year: "2022"
     },
     {
       id: 6,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/mwcamhwu_IMG_4040.jpeg",
-      alt: "Fire aftermath and destruction",
-      category: "Emergency Relief",
-      description: "The devastating aftermath of LA fires showing why our emergency relief programs are so critical"
-    },
-    {
-      id: 6,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/s7610mdy_IMG_6517.jpeg",
-      alt: "Fire Department collaboration with food donations",
-      category: "Emergency Relief",
-      description: "Working alongside LA Fire Department heroes to provide food and essential supplies during emergencies"
+      src: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Iceland Photography Tour",
+      category: "Photography",
+      location: "Iceland",
+      year: "2023"
     },
     {
       id: 7,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/tz1zgq08_IMG_1315.jpeg",
-      alt: "Volunteers distributing supplies",
-      category: "Community Outreach",
-      description: "Our dedicated volunteers helping families during a community distribution event"
+      src: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Lake Adventure",
+      category: "Mountains",
+      location: "Switzerland",
+      year: "2023"
     },
     {
       id: 8,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/9f7vzw7l_IMG_1289.jpeg",
-      alt: "Educational resource distribution",
-      category: "Educational Support",
-      description: "Volunteers in Changing Lives shirts providing educational resources and materials"
+      src: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Coral Reef Diving",
+      category: "Ocean",
+      location: "Australia",
+      year: "2022"
+    },
+    {
+      id: 9,
+      src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Moroccan Markets",
+      category: "Culture",
+      location: "Morocco",
+      year: "2023"
+    },
+    {
+      id: 10,
+      src: "https://images.unsplash.com/photo-1419833479618-c595710936ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Forest Wildlife Safari",
+      category: "Forest",
+      location: "Kenya",
+      year: "2023"
+    },
+    {
+      id: 11,
+      src: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Tokyo Street Life",
+      category: "City",
+      location: "Japan",
+      year: "2022"
+    },
+    {
+      id: 12,
+      src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Northern Lights Photography",
+      category: "Photography",
+      location: "Norway",
+      year: "2023"
     }
   ];
 
-  const categories = ["All", ...new Set(galleryImages.map(img => img.category))];
-  const [activeCategory, setActiveCategory] = useState("All");
+  const categories = ["All", "Mountains", "Ocean", "Culture", "Forest", "City", "Photography"];
 
-  const filteredImages = activeCategory === "All" 
+  const filteredImages = activeFilter === "All" 
     ? galleryImages 
-    : galleryImages.filter(img => img.category === activeCategory);
+    : galleryImages.filter(img => img.category === activeFilter);
 
   const openModal = (image, index) => {
     setSelectedImage(image);
@@ -97,24 +136,28 @@ const Gallery = () => {
     <section id="gallery" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Community in <span className="text-gradient">Action</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Adventure <span className="text-adventure">Gallery</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            See the real impact of our work through authentic photos from our community events, 
-            programs, and the lives we've touched together.
+            Witness the incredible journeys of our global community. From breathtaking landscapes 
+            to cultural encounters, every photo tells a story of discovery.
           </p>
           
-          {/* Category Filter */}
+          {/* Category Filters */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
+            <div className="flex items-center space-x-2 text-gray-500 mb-4">
+              <Filter className="w-4 h-4" />
+              <span className="text-sm font-medium">Filter by experience:</span>
+            </div>
             {categories.map((category) => (
               <button
                 key={category}
-                onClick={() => setActiveCategory(category)}
+                onClick={() => setActiveFilter(category)}
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-                  activeCategory === category
-                    ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  activeFilter === category
+                    ? "bg-gradient-to-r from-emerald-500 to-orange-500 text-white shadow-lg transform scale-105"
+                    : "bg-gray-100 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600"
                 }`}
               >
                 {category}
@@ -124,33 +167,30 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="gallery-grid">
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer card-hover bg-gray-100 gallery-watermarked"
+              className="gallery-item aspect-square cursor-pointer"
               onClick={() => openModal(image, index)}
             >
-              <div className="relative h-64 bg-gray-100 flex items-center justify-center">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
-                  style={{ 
-                    objectFit: 'contain',
-                    backgroundColor: '#f9fafb'
-                  }}
-                />
-              </div>
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
               
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <div className="flex items-center mb-2">
-                    <Camera className="w-4 h-4 mr-2" />
-                    <span className="text-sm font-medium">{image.category}</span>
+              <div className="gallery-overlay">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <MapPin className="w-4 h-4" />
+                    <span className="text-sm font-medium">{image.location}</span>
                   </div>
-                  <p className="text-sm leading-relaxed">{image.description}</p>
+                  <div className="flex items-center space-x-2">
+                    <Calendar className="w-4 h-4" />
+                    <span className="text-sm">{image.year}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,20 +199,20 @@ const Gallery = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
+          <div className="bg-gradient-to-r from-emerald-50 to-orange-50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Be Part of Our Story
+              Ready to Create Your Own Adventure Story?
             </h3>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-              Every photo represents a life touched, a family supported, and a community strengthened. 
-              Join us in creating more moments like these.
+              Join our community of explorers and capture memories that will last a lifetime. 
+              Your next great adventure is just one click away.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#help" className="btn-primary">
-                Get Involved
+              <a href="#contact" className="btn-adventure">
+                Plan Your Journey
               </a>
-              <a href="#contact" className="btn-secondary">
-                Learn More
+              <a href="#experiences" className="btn-outline">
+                Browse Experiences
               </a>
             </div>
           </div>
@@ -219,11 +259,17 @@ const Gallery = () => {
             {/* Image Info */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
               <div className="text-white">
-                <div className="flex items-center mb-2">
-                  <Camera className="w-4 h-4 mr-2" />
-                  <span className="text-sm font-medium">{selectedImage.category}</span>
+                <h3 className="text-xl font-bold mb-2">{selectedImage.alt}</h3>
+                <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-2">
+                    <MapPin className="w-4 h-4" />
+                    <span className="text-sm">{selectedImage.location}</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Calendar className="w-4 h-4" />
+                    <span className="text-sm">{selectedImage.year}</span>
+                  </div>
                 </div>
-                <p className="text-sm leading-relaxed">{selectedImage.description}</p>
               </div>
             </div>
           </div>
