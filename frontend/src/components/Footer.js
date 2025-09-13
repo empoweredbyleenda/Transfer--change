@@ -1,5 +1,5 @@
 import React from "react";
-import { Heart, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react";
+import { Globe, Mail, Phone, MapPin, ArrowUp, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
