@@ -93,10 +93,10 @@ const Gallery = () => {
     },
     {
       id: 12,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/eyvhnyb9_IMG_4049.jpeg",
-      alt: "Fire emergency response context",
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/s7610mdy_IMG_6517.jpeg",
+      alt: "Fire Department collaboration with food donations",
       category: "Emergency Relief",
-      description: "Emergency response during natural disasters affecting our community"
+      description: "Working alongside LA Fire Department heroes to provide food and essential supplies during emergencies"
     }
   ];
 
