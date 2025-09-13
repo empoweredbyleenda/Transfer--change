@@ -55,7 +55,7 @@ const Programs = () => {
             Our <span className="text-gradient">Programs</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive support services designed to meet the diverse needs of our Los Angeles community, 
+            Comprehensive support services designed to meet the diverse needs of our community nationwide, 
             from emergency relief to long-term empowerment.
           </p>
         </div>
@@ -68,15 +68,18 @@ const Programs = () => {
                 key={index}
                 className="card-hover bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-56 overflow-hidden bg-gray-100">
                   <img
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-110"
-                    style={program.title === "Youth Empowerment" ? { objectPosition: '50% 30%' } : {}}
+                    className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+                    style={{ 
+                      objectFit: 'contain',
+                      backgroundColor: '#f9fafb'
+                    }}
                   />
                   <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-white/90 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-white/95 rounded-full flex items-center justify-center shadow-lg">
                       <Icon className="w-6 h-6 text-purple-600" />
                     </div>
                   </div>

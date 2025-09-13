@@ -5,112 +5,91 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Using your authentic photos and organizing them by category
+  // Using UNIQUE photos that are NOT used in Programs section
   const galleryImages = [
     {
       id: 1,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/k5ncgcv6_IMG_1286.jpeg",
-      alt: "Children receiving school supply donations",
-      category: "Back-to-School Drive",
-      description: "Young community members receiving essential school supplies during our Back-to-School event"
-    },
-    {
-      id: 2,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/m7syjxil_IMG_0414.jpeg",
       alt: "Professional volunteer at community event",
       category: "Team & Volunteers",
-      description: "Dedicated team member at a Snatched Beauties community outreach event"
+      description: "Dedicated team member at a Changing Lives community outreach event"
     },
     {
-      id: 3,
+      id: 2,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/xha3lbf5_IMG_0410.jpeg",
       alt: "Community members receiving support",
       category: "Community Outreach",
       description: "Community members receiving essential supplies and support from our programs"
     },
     {
-      id: 4,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/i31wg596_IMG_0455.jpeg",
-      alt: "Large volunteer group at community event",
-      category: "Partnerships",
-      description: "Amazing collaboration with volunteers from multiple organizations working together to serve our community"
-    },
-    {
-      id: 5,
+      id: 3,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/kafbm3va_IMG_0310.jpeg",
       alt: "Corporate sponsors and community partners",
       category: "Partnerships",
       description: "Proud partnerships with Eisner Health, Cane's, TopGolf, Thrive Market, and many other supporters"
     },
     {
-      id: 6,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/x7uj2son_IMG_4768.jpeg",
-      alt: "Health initiative - mask distribution",
-      category: "Health Initiatives",
-      description: "Volunteers distributing 3M masks and health supplies to families during health initiatives"
-    },
-    {
-      id: 7,
+      id: 4,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/o9ihmsce_IMG_4115.jpeg",
       alt: "Pray for Los Angeles - Emergency Response",
       category: "Emergency Relief",
       description: "Supporting our Los Angeles community during times of crisis and natural disasters"
     },
     {
-      id: 8,
+      id: 5,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/dji4wm2h_IMG_4041.jpeg",
       alt: "Fire aftermath and emergency response",
       category: "Emergency Relief",
       description: "Responding to fire emergencies and providing aid to families affected by disasters"
     },
     {
-      id: 9,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/3h1ox29h_IMG_8501.jpeg",
-      alt: "LA Fire Department partnership - loading supplies",
-      category: "Emergency Relief",
-      description: "Partnering with LA Fire Department to distribute emergency supplies to affected families"
-    },
-    {
-      id: 10,
+      id: 6,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/s7610mdy_IMG_6517.jpeg",
       alt: "Fire Department collaboration with food donations",
       category: "Emergency Relief",
       description: "Working alongside LA Fire Department heroes to provide food and essential supplies during emergencies"
     },
     {
-      id: 11,
+      id: 7,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/tz1zgq08_IMG_1315.jpeg",
       alt: "Volunteers distributing supplies",
       category: "Community Outreach",
       description: "Our dedicated volunteers helping families during a community distribution event"
     },
     {
-      id: 12,
+      id: 8,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/9f7vzw7l_IMG_1289.jpeg",
       alt: "Educational resource distribution",
       category: "Educational Support",
-      description: "Volunteers in Snatched Beauties shirts providing educational resources and materials"
+      description: "Volunteers in Changing Lives shirts providing educational resources and materials"
     },
     {
-      id: 13,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/4t9qxvac_IMG_1355.jpeg",
-      alt: "Food and snack distribution",
-      category: "Food Programs",
-      description: "Volunteers organizing food and snacks for families in need during community outreach"
-    },
-    {
-      id: 14,
-      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/v600xabl_IMG_6867.jpeg",
-      alt: "Community Closet volunteers organizing supplies",
-      category: "Community Closet",
-      description: "Volunteers working together to organize clothing and supplies for families in need"
-    },
-    {
-      id: 15,
+      id: 9,
       src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/obhcy0uw_IMG_6877.png",
       alt: "Community distribution tent event",
       category: "Community Outreach",
       description: "Large-scale community distribution event with volunteers distributing essential items"
+    },
+    {
+      id: 10,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/0bh40m7b_IMG_6874.jpeg",
+      alt: "Behind-the-scenes organization",
+      category: "Behind the Scenes",
+      description: "The organization and preparation work that makes our community programs possible"
+    },
+    {
+      id: 11,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/zslphu76_IMG_1288.jpeg",
+      alt: "Happy child with school supplies",
+      category: "Youth Impact",
+      description: "A bright smile shows the joy of receiving educational support and encouragement"
+    },
+    {
+      id: 12,
+      src: "https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/eyvhnyb9_IMG_4049.jpeg",
+      alt: "Fire emergency response context",
+      category: "Emergency Relief",
+      description: "Emergency response during natural disasters affecting our community"
     }
   ];
 
@@ -177,14 +156,18 @@ const Gallery = () => {
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer card-hover"
+              className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer card-hover bg-gray-100"
               onClick={() => openModal(image, index)}
             >
-              <div className="aspect-w-4 aspect-h-3 bg-gray-200">
+              <div className="relative h-64 bg-gray-100 flex items-center justify-center">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  style={{ 
+                    objectFit: 'contain',
+                    backgroundColor: '#f9fafb'
+                  }}
                 />
               </div>
               
