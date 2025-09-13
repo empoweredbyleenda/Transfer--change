@@ -28,7 +28,7 @@ const Footer = () => {
     {
       icon: Facebook,
       name: "Facebook",
-      url: "https://www.facebook.com/people/Snatched-Beauties-Changing-Lives-Non-Profit/61572380875090/"
+      url: "https://www.facebook.com/profile.php?id=61572380875090"
     },
     {
       icon: Twitter,
@@ -38,12 +38,12 @@ const Footer = () => {
     {
       icon: Instagram,
       name: "Instagram",
-      url: "https://www.instagram.com/snatched_beauties/"
+      url: "https://www.instagram.com/sb_changinglives?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "#"
+      url: "https://www.linkedin.com/in/changinglivesla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   ];
 
