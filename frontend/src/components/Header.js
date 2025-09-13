@@ -21,13 +21,13 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/wk84hkl3_IMG_0996_Original.png"
-              alt="Snatched Beauties Logo"
+              src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/xs2iz9cs_Changing%20Lives.png"
+              alt="Changing Lives Logo"
               className="w-12 h-12 object-contain"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Snatched Beauties</h1>
-              <p className="text-sm text-gray-600">Changing Lives</p>
+              <h1 className="text-xl font-bold text-gray-900">Changing Lives</h1>
+              <p className="text-sm text-gray-600">Snatched Beauties</p>
             </div>
           </div>
 
