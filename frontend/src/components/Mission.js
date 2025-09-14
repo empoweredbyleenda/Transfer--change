@@ -6,7 +6,7 @@ const Mission = () => {
     {
       icon: Target,
       title: "Our Mission",
-      description: "To provide compassionate support, essential resources, and life-changing opportunities to individuals and families in need throughout Los Angeles."
+      description: "To provide compassionate support, essential resources, and life-changing opportunities to individuals and families in need nationwide."
     },
     {
       icon: Shield,

@@ -1,106 +1,76 @@
 import React from "react";
-import { ArrowRight, MapPin, Video, Star, Shield } from "lucide-react";
+import { ArrowRight, Users, Heart, Globe } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center coaching-gradient">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="text-center lg:text-left">
-            <div className="fade-in">
-              <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Find Clarity, Confidence &{" "}
-                <span className="text-coaching">Healing</span>{" "}
-                Through Coaching
-              </h1>
-              
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Serving Los Angeles (In-Person) & Nationwide (Zoom)
-              </p>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/wk84hkl3_IMG_0996_Original.png"
+          alt="Snatched Beauties - Changing Lives One Family at a Time"
+          className="w-full h-full object-contain bg-gradient-to-br from-pink-100 to-purple-100"
+        />
+        <div className="hero-overlay absolute inset-0"></div>
+      </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                <a href="#contact" className="btn-primary group">
-                  Book Your First Session
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a href="#about" className="btn-secondary">
-                  Learn More About Me
-                </a>
-              </div>
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div className="fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            More Than Aid —{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
+              We Change Lives
+            </span>
+          </h1>
+          
+          <p className="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-200">
+            Empowering underserved youth, families, and individuals nationwide with LA County as our home base, 
+            because we believe every life deserves the opportunity to flourish and reach its full potential.
+          </p>
 
-              {/* Trust Indicators */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                <div className="trust-badge">
-                  <Shield className="w-5 h-5 text-purple-600" />
-                  <span className="text-sm font-medium text-gray-700">Certified NLP Practitioner</span>
-                </div>
-                <div className="trust-badge">
-                  <MapPin className="w-5 h-5 text-purple-600" />
-                  <span className="text-sm font-medium text-gray-700">LA In-Person</span>
-                </div>
-                <div className="trust-badge">
-                  <Video className="w-5 h-5 text-purple-600" />
-                  <span className="text-sm font-medium text-gray-700">Zoom Worldwide</span>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <a href="#donate" className="btn-primary group">
+              Donate Now
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a href="#programs" className="btn-secondary">
+              Learn More
+            </a>
           </div>
 
-          {/* Professional Image */}
-          <div className="relative">
-            <div className="slide-in-right">
-              <div className="relative rounded-2xl overflow-hidden professional-shadow">
-                <img
-                  src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/i0er0vi4_IMG_2014.jpeg"
-                  alt="Leenda Bolden - Professional Coach"
-                  className="w-full h-[500px] object-cover"
-                />
-                <div className="hero-overlay absolute inset-0"></div>
+          {/* Quick Stats */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
+            <div className="text-center slide-in-left">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-white" />
               </div>
-              
-              {/* Floating testimonial card */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100">
-                <div className="flex items-center space-x-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-sm text-gray-600 mb-2">
-                  "Leenda helped me find my confidence and clarity. Highly recommend!"
-                </p>
-                <p className="text-xs text-gray-500 font-medium">- Sarah M.</p>
+              <h3 className="text-2xl font-bold mb-2">500+</h3>
+              <p className="text-gray-300">Families Served</p>
+            </div>
+            
+            <div className="text-center fade-in">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="w-8 h-8 text-white" />
               </div>
-
-              {/* Professional credentials badge */}
-              <div className="absolute -top-6 -right-6 bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 rounded-xl shadow-xl">
-                <div className="text-center">
-                  <div className="font-bold text-lg">NLP</div>
-                  <div className="text-sm opacity-90">Certified</div>
-                </div>
+              <h3 className="text-2xl font-bold mb-2">1000+</h3>
+              <p className="text-gray-300">Lives Impacted</p>
+            </div>
+            
+            <div className="text-center slide-in-right">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Globe className="w-8 h-8 text-white" />
               </div>
+              <h3 className="text-2xl font-bold mb-2">Year-Round</h3>
+              <p className="text-gray-300">Community Support</p>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Service Availability Banner */}
-        <div className="mt-16 bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="text-center md:text-left mb-4 md:mb-0">
-              <p className="text-lg font-semibold text-gray-900">Ready to start your transformation?</p>
-              <p className="text-gray-600">Book your first session and take the first step toward positive change.</p>
-            </div>
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-              <div className="flex items-center space-x-2 text-green-600">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="font-medium">Available Today</span>
-              </div>
-              <a href="tel:323-613-5153" className="btn-accent">
-                Call (323) 613-5153
-              </a>
-            </div>
-          </div>
-        </div>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <div className="w-1 h-16 bg-white/30 rounded-full"></div>
       </div>
     </section>
   );
