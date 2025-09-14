@@ -165,7 +165,7 @@ const Footer = () => {
                 onClick={scrollToTop}
                 className="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300 group"
               >
-                <ArrowUp className="w-5 h-5 text-white group-hover:-translate-y-1 transition-transform" />
+                <span className="text-white text-xl font-bold group-hover:-translate-y-1 transition-transform">↑</span>
               </button>
             </div>
           </div>
