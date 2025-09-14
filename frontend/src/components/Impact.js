@@ -109,7 +109,7 @@ const Impact = () => {
                 className="card-hover bg-white rounded-xl p-8 shadow-lg border border-gray-100"
               >
                 <div className="mb-6">
-                  <div className="text-4xl text-blue-300 mb-4">"</div>
+                  <div className="text-4xl text-pink-300 mb-4">"</div>
                   <p className="text-gray-700 italic leading-relaxed mb-6">
                     {testimonial.quote}
                   </p>
