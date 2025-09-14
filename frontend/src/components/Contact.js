@@ -215,7 +215,7 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-300 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-300 focus:outline-none transition-colors"
                   placeholder="(555) 123-4567"
                 />
               </div>
