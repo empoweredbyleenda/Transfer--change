@@ -32,12 +32,12 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-200 to-purple-300 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
                 <Heart className="w-6 h-6 text-gray-800" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Changing Lives</h3>
-                <p className="text-sm text-purple-200 font-medium">Snatched Beauties</p>
+                <p className="text-sm text-pink-300 font-medium">Snatched Beauties</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
