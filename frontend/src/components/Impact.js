@@ -43,7 +43,7 @@ const Impact = () => {
 
   const testimonials = [
     {
-      quote: "Snatched Beauties came through for us when we needed help the most. Their back-to-school program made sure my kids had everything they needed to start the year right.",
+      quote: "Changing Lives came through for us when we needed help the most. Their back-to-school program made sure my kids had everything they needed to start the year right.",
       author: "Maria S.",
       role: "Single Mother of 3"
     },
@@ -60,12 +60,11 @@ const Impact = () => {
   ];
 
   return (
-    <section id="impact" className="section-padding bg-gradient-to-br from-purple-50 to-pink-50">
+    <section id="impact" className="section-padding bg-purple-50">
       <div className="max-w-7xl mx-auto">
-        {/* Impact Statistics */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-gradient">Impact</span>
+            Our <span className="text-purple-600">Impact</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
             Every number represents a life touched, a family supported, and a community strengthened. 
@@ -81,7 +80,7 @@ const Impact = () => {
                 key={index}
                 className="card-hover bg-white rounded-xl p-8 text-center shadow-lg border border-gray-100"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</h3>
@@ -96,7 +95,7 @@ const Impact = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Stories from Our <span className="text-gradient">Community</span>
+              Stories from Our <span className="text-purple-600">Community</span>
             </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Real stories from real people whose lives have been touched by our community programs.
@@ -132,7 +131,7 @@ const Impact = () => {
             </h3>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
               Every donation, every volunteer hour, and every share helps us reach more families 
-              and create lasting change in our Los Angeles community.
+              and create lasting change in our community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#donate" className="btn-primary">

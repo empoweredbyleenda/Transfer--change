@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Heart, HandHeart, Share2, DollarSign, Clock, Users, Mail, Gift } from "lucide-react";
+import { Heart, HandHeart, Share2, DollarSign, Clock, Users, Mail } from "lucide-react";
 
 const HowToHelp = () => {
   const [donationAmount, setDonationAmount] = useState(50);
@@ -31,14 +31,12 @@ const HowToHelp = () => {
 
   const handleVolunteerSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send this to your backend
     alert(`Thank you for your interest in volunteering! We'll contact you at ${volunteerEmail}`);
     setVolunteerEmail("");
   };
 
   const handleDonationSubmit = (e) => {
     e.preventDefault();
-    // Here you would integrate with your payment processor
     alert(`Thank you for your ${donationAmount} donation! Redirecting to secure payment...`);
   };
 
@@ -47,11 +45,11 @@ const HowToHelp = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            How You Can <span className="text-gradient">Help</span>
+            How You Can <span className="text-purple-600">Help</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Your support can change lives. Whether through donations, volunteering, or raising awareness, 
-            every contribution makes a meaningful difference in our Los Angeles community.
+            every contribution makes a meaningful difference in our community.
           </p>
         </div>
 
@@ -64,7 +62,7 @@ const HowToHelp = () => {
                 key={index}
                 className="card-hover bg-gray-50 rounded-xl p-8 text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{way.title}</h3>
@@ -91,7 +89,7 @@ const HowToHelp = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Donation Form */}
-          <div id="donate" className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
+          <div id="donate" className="bg-purple-50 rounded-2xl p-8">
             <div className="text-center mb-8">
               <Heart className="w-12 h-12 text-purple-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Make a Donation</h3>
@@ -156,9 +154,9 @@ const HowToHelp = () => {
           </div>
 
           {/* Volunteer Form */}
-          <div id="volunteer" className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+          <div id="volunteer" className="bg-blue-50 rounded-2xl p-8">
             <div className="text-center mb-8">
-              <HandHeart className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
+              <HandHeart className="w-12 h-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Volunteer With Us</h3>
               <p className="text-gray-600">Join our team and make a direct impact in your community</p>
             </div>
@@ -172,7 +170,7 @@ const HowToHelp = () => {
                   type="email"
                   value={volunteerEmail}
                   onChange={(e) => setVolunteerEmail(e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-indigo-600 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none"
                   placeholder="your@email.com"
                   required
                 />
@@ -193,7 +191,7 @@ const HowToHelp = () => {
                     <label key={area} className="flex items-center">
                       <input
                         type="checkbox"
-                        className="mr-3 w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                        className="mr-3 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                       />
                       <span className="text-gray-700">{area}</span>
                     </label>
@@ -201,7 +199,7 @@ const HowToHelp = () => {
                 </div>
               </div>
 
-              <button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 w-full">
+              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 w-full">
                 Sign Up to Volunteer
               </button>
 
@@ -214,7 +212,7 @@ const HowToHelp = () => {
 
         {/* Additional Support Options */}
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Other Ways to Support</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-8">Other Ways to Support</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 bg-gray-50 rounded-xl">
               <Users className="w-8 h-8 text-purple-600 mx-auto mb-4" />
@@ -243,4 +241,4 @@ const HowToHelp = () => {
   );
 };
 
-export default HowToHelp;
+export default Impact;
