@@ -20,12 +20,12 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-purple-200 to-purple-300 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
               <span className="text-gray-800 font-bold text-lg">C</span>
             </div>
             <div className="text-left">
               <h1 className="text-xl font-bold text-gray-900">Changing Lives</h1>
-              <p className="text-xs text-purple-400 font-medium">Snatched Beauties</p>
+              <p className="text-xs text-pink-300 font-medium">Snatched Beauties</p>
             </div>
           </div>
 
