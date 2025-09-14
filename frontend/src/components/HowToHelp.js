@@ -215,7 +215,7 @@ const HowToHelp = () => {
           <h3 className="text-3xl font-bold text-gray-900 mb-8">Other Ways to Support</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 bg-gray-50 rounded-xl">
-              <Users className="w-8 h-8 text-blue-600 mx-auto mb-4" />
+              <Users className="w-8 h-8 text-pink-600 mx-auto mb-4" />
               <h4 className="font-semibold text-gray-900 mb-2">Corporate Partnerships</h4>
               <p className="text-sm text-gray-600">Partner with us for employee volunteer programs</p>
             </div>
