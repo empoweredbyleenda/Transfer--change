@@ -198,15 +198,18 @@ frontend:
 
   - task: "Remove Arrow Icons from Buttons"
     implemented: true
-    working: true
-    file: "All component files"
-    stuck_count: 0
+    working: false
+    file: "Footer.js"
+    stuck_count: 1
     priority: "low"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Buttons use clean design without arrow icons"
+      - working: false
+        agent: "testing"
+        comment: "Minor: One arrow icon found in footer scroll-to-top button (ArrowUp icon from lucide-react). All other buttons are clean without arrows."
 
   - task: "Restore Changing Lives Branding"
     implemented: true
