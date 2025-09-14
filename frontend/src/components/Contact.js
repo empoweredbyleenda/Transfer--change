@@ -117,7 +117,7 @@ const Contact = () => {
               return (
                 <div key={index} className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                   </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                           href={item.link}
                           target={item.link.startsWith('http') ? '_blank' : undefined}
                           rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-pink-600 hover:text-pink-700 font-medium text-sm mt-2 inline-block"
+                          className="text-purple-300 hover:text-purple-400 font-medium text-sm mt-2 inline-block"
                         >
                           {item.value}
                         </a>
@@ -155,7 +155,7 @@ const Contact = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors duration-200"
+                      className="w-10 h-10 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-colors duration-200"
                       aria-label={social.name}
                     >
                       <Icon className="w-5 h-5 text-white" />
@@ -183,7 +183,7 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-300 focus:outline-none transition-colors"
                     placeholder="Your full name"
                   />
                 </div>
@@ -199,7 +199,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-300 focus:outline-none transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -215,7 +215,7 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-300 focus:outline-none transition-colors"
                   placeholder="(555) 123-4567"
                 />
               </div>
@@ -231,7 +231,7 @@ const Contact = () => {
                   required
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-300 focus:outline-none transition-colors"
                   placeholder="How can we help you?"
                 />
               </div>
@@ -247,14 +247,14 @@ const Contact = () => {
                   rows={5}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-300 focus:outline-none transition-colors resize-none"
                   placeholder="Tell us more about how we can help or how you'd like to get involved..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center"
+                className="w-full bg-gray-800 hover:bg-black text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message
@@ -265,21 +265,21 @@ const Contact = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-gray-800 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to Make a Difference?</h3>
-            <p className="text-lg mb-6 text-blue-100 max-w-2xl mx-auto">
+            <p className="text-lg mb-6 text-gray-300 max-w-2xl mx-auto">
               Whether you want to volunteer, donate, or simply learn more about our programs, 
               we're here to help you find the perfect way to get involved.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="#help"
-                className="btn-secondary bg-white text-blue-600 hover:bg-gray-100"
+                className="btn-secondary bg-white text-gray-800 hover:bg-gray-100"
               >
                 <Heart className="w-5 h-5 mr-2" />
                 Get Involved
               </a>
-              <a href="#programs" className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-blue-600">
+              <a href="#programs" className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-gray-800">
                 Learn More
               </a>
             </div>

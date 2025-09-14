@@ -32,12 +32,12 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-pink-500 rounded-full flex items-center justify-center">
-                <Heart className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-gradient-to-r from-purple-200 to-purple-300 rounded-full flex items-center justify-center">
+                <Heart className="w-6 h-6 text-gray-800" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Changing Lives</h3>
-                <p className="text-sm text-pink-600 font-medium">Snatched Beauties</p>
+                <p className="text-sm text-purple-200 font-medium">Snatched Beauties</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -46,19 +46,19 @@ const Footer = () => {
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-purple-200 flex-shrink-0" />
                 <a href="tel:323-613-5153" className="text-sm text-gray-300 hover:text-white">
                   (323) 613-5153
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-purple-200 flex-shrink-0" />
                 <a href="mailto:sbchlvs@gmail.com" className="text-sm text-gray-300 hover:text-white">
                   sbchlvs@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-purple-200 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   5710 W. Manchester Ave Ste 211 B<br />
                   Los Angeles, CA 90045
@@ -75,7 +75,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-purple-200 transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -92,7 +92,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={program.href}
-                    className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-purple-200 transition-colors text-sm"
                   >
                     {program.name}
                   </a>
@@ -112,13 +112,13 @@ const Footer = () => {
               <div className="space-y-3">
                 <a
                   href="#donate"
-                  className="block w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold text-center transition-all duration-300 text-sm"
+                  className="block w-full bg-gray-800 hover:bg-black text-white px-6 py-3 rounded-full font-semibold text-center transition-all duration-300 text-sm"
                 >
                   Make a Donation
                 </a>
                 <a
                   href="#volunteer"
-                  className="block w-full bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-3 rounded-full font-semibold text-center transition-all duration-300 text-sm"
+                  className="block w-full bg-transparent border-2 border-gray-600 text-gray-300 hover:bg-gray-600 hover:text-white px-6 py-3 rounded-full font-semibold text-center transition-all duration-300 text-sm"
                 >
                   Volunteer With Us
                 </a>
@@ -128,16 +128,16 @@ const Footer = () => {
               <div className="pt-4">
                 <h5 className="text-sm font-semibold text-gray-200 mb-3">Follow Us</h5>
                 <div className="flex space-x-3">
-                  <a href="https://facebook.com/snatchedbeautieschanginglives" className="w-8 h-8 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://facebook.com/snatchedbeautieschanginglives" className="w-8 h-8 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-colors">
                     <Facebook className="w-4 h-4 text-white" />
                   </a>
-                  <a href="https://instagram.com/snatchedbeautieschanginglives" className="w-8 h-8 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://instagram.com/snatchedbeautieschanginglives" className="w-8 h-8 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-colors">
                     <Instagram className="w-4 h-4 text-white" />
                   </a>
-                  <a href="https://linkedin.com/company/snatchedbeautieschanginglives" className="w-8 h-8 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://linkedin.com/company/snatchedbeautieschanginglives" className="w-8 h-8 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-colors">
                     <Linkedin className="w-4 h-4 text-white" />
                   </a>
-                  <a href="https://twitter.com/sbchanginglives" className="w-8 h-8 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://twitter.com/sbchanginglives" className="w-8 h-8 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-colors">
                     <Twitter className="w-4 h-4 text-white" />
                   </a>
                 </div>
@@ -155,15 +155,15 @@ const Footer = () => {
               © 2024 Changing Lives - Snatched Beauties. All rights reserved.
             </div>
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-sm text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="#" className="text-sm text-gray-400 hover:text-purple-200 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-sm text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="#" className="text-sm text-gray-400 hover:text-purple-200 transition-colors">
                 Terms of Service
               </a>
               <button
                 onClick={scrollToTop}
-                className="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300 group"
+                className="w-10 h-10 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-all duration-300 group"
               >
                 <span className="text-white text-xl font-bold group-hover:-translate-y-1 transition-transform">↑</span>
               </button>
