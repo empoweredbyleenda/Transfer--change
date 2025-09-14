@@ -225,7 +225,7 @@ const HowToHelp = () => {
               <p className="text-sm text-gray-600">Donate supplies, clothing, or services</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-xl">
-              <Share2 className="w-8 h-8 text-pink-600 mx-auto mb-4" />
+              <Share2 className="w-8 h-8 text-pink-300 mx-auto mb-4" />
               <h4 className="font-semibold text-gray-900 mb-2">Social Media</h4>
               <p className="text-sm text-gray-600">Follow and share our posts to spread awareness</p>
             </div>
