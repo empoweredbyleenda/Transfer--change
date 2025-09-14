@@ -60,7 +60,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
-                  5710 W. Manchester save Ste 211 B<br />
+                  5710 W. Manchester Ave Ste 211 B<br />
                   Los Angeles, CA 90045
                 </div>
               </div>
