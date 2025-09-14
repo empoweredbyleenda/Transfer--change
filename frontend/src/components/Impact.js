@@ -64,7 +64,7 @@ const Impact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-purple-600">Impact</span>
+            Our <span className="text-blue-600">Impact</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
             Every number represents a life touched, a family supported, and a community strengthened. 
