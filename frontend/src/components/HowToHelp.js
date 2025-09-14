@@ -123,7 +123,7 @@ const HowToHelp = () => {
                     type="number"
                     value={donationAmount}
                     onChange={(e) => setDonationAmount(parseInt(e.target.value) || 0)}
-                    className="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none"
+                    className="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-600 focus:outline-none"
                     placeholder="Custom amount"
                   />
                 </div>
