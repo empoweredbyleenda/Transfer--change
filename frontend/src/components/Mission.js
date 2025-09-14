@@ -46,7 +46,7 @@ const Mission = () => {
                 key={index}
                 className="card-hover bg-white rounded-xl p-8 text-center shadow-lg border border-gray-100"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
