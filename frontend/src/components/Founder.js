@@ -41,9 +41,19 @@ const Founder = () => {
           {/* Founder Photo */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl bg-gray-100 flex items-center justify-center">
-                {/* Placeholder until photo is uploaded */}
-                <div className="w-full h-full bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center">
+              <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl bg-gray-100">
+                <img 
+                  src="/leenda-founder.jpeg" 
+                  alt="Leenda B, Founder of Changing Lives" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback if photo doesn't load
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                {/* Fallback placeholder */}
+                <div className="w-full h-full bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center" style={{display: 'none'}}>
                   <div className="text-center">
                     <div className="w-24 h-24 bg-pink-300 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Heart className="w-12 h-12 text-white" />
