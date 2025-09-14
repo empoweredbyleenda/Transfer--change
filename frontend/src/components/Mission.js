@@ -66,7 +66,7 @@ const Mission = () => {
               Every contribution matters. Join us in building resilience and nurturing hope 
               in those who need it most.
             </p>
-            <a href="#help" className="btn-secondary bg-white text-pink-600 hover:bg-gray-100">
+            <a href="#help" className="btn-secondary bg-white text-gray-800 hover:bg-gray-100">
               Get Involved Today
             </a>
           </div>
