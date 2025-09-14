@@ -247,7 +247,7 @@ const Contact = () => {
                   rows={5}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-300 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-300 focus:outline-none transition-colors resize-none"
                   placeholder="Tell us more about how we can help or how you'd like to get involved..."
                 ></textarea>
               </div>
