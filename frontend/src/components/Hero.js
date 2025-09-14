@@ -19,27 +19,18 @@ const Hero = () => {
         <div className="fade-in">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
             More Than Aid —{" "}
-            <span className="text-blue-600">
+            <span className="text-gradient">
               We Change Lives
             </span>
           </h1>
           
-          <p className="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-200">
+          <p className="text-xl sm:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-gray-200">
             Empowering underserved youth, families, and individuals nationwide with LA County as our home base, 
             because we believe every life deserves the opportunity to flourish and reach its full potential.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href="#donate" className="btn-primary">
-              Donate Now
-            </a>
-            <a href="#programs" className="btn-secondary">
-              Learn More
-            </a>
-          </div>
-
           {/* Quick Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto mb-16">
             <div className="text-center slide-in-left">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
@@ -63,6 +54,16 @@ const Hero = () => {
               <h3 className="text-2xl font-bold mb-2">Year-Round</h3>
               <p className="text-gray-300">Community Support</p>
             </div>
+          </div>
+
+          {/* Buttons moved below stats, away from logo */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#donate" className="btn-primary">
+              Donate Now
+            </a>
+            <a href="#programs" className="btn-secondary">
+              Learn More
+            </a>
           </div>
         </div>
       </div>
