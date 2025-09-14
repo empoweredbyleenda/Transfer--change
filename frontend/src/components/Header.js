@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center flex-shrink-0">
               <img 
                 src="/changing-lives-logo.png" 
                 alt="Snatched Beauties Changing Lives Logo" 
@@ -35,9 +35,9 @@ const Header = () => {
                 CL
               </div>
             </div>
-            <div className="text-left">
-              <h1 className="text-xl font-bold text-gray-900">Changing Lives</h1>
-              <p className="text-xs text-pink-300 font-medium">Snatched Beauties</p>
+            <div className="text-left flex-1">
+              <h1 className="text-xl font-bold text-gray-900 leading-tight">Changing Lives</h1>
+              <p className="text-xs text-pink-300 font-medium leading-tight">Snatched Beauties</p>
             </div>
           </div>
 
