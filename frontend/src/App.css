@@ -29,11 +29,11 @@ html {
 }
 
 .btn-primary {
-  @apply bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg;
+  @apply bg-gray-800 hover:bg-black text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg;
 }
 
 .btn-secondary {
-  @apply bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300;
+  @apply bg-white text-gray-800 border-2 border-gray-300 hover:bg-gray-50 hover:border-gray-400 px-8 py-3 rounded-full font-semibold transition-all duration-300;
 }
 
 .section-padding {
