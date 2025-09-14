@@ -109,8 +109,8 @@ const HowToHelp = () => {
                       onClick={() => setDonationAmount(amount)}
                       className={`p-3 rounded-lg border-2 font-semibold transition-all ${
                         donationAmount === amount
-                          ? "border-pink-600 bg-pink-600 text-white"
-                          : "border-gray-300 text-gray-700 hover:border-pink-300"
+                          ? "border-gray-800 bg-gray-800 text-white"
+                          : "border-gray-300 text-gray-700 hover:border-gray-400"
                       }`}
                     >
                       ${amount}
