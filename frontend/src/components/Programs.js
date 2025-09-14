@@ -92,7 +92,7 @@ const Programs = () => {
                   <div className="space-y-2">
                     {program.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center text-sm text-gray-500">
-                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mr-3"></div>
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></div>
                         {feature}
                       </div>
                     ))}
