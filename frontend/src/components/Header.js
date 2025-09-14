@@ -20,8 +20,21 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
-              <span className="text-gray-800 font-bold text-lg">C</span>
+            <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-r from-pink-300 to-pink-400">
+              {/* Replace this div with your actual logo image */}
+              <img 
+                src="/logo.png" 
+                alt="Changing Lives Logo" 
+                className="w-full h-full object-cover rounded-full"
+                onError={(e) => {
+                  // Fallback to text if logo image not found
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="w-full h-full flex items-center justify-center text-white font-bold text-sm" style={{display: 'none'}}>
+                CL
+              </div>
             </div>
             <div className="text-left">
               <h1 className="text-xl font-bold text-gray-900">Changing Lives</h1>
