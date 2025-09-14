@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { Menu, X, Heart, Phone, Mail } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Packages", href: "#packages" },
+    { name: "Mission", href: "#mission" },
+    { name: "Programs", href: "#programs" },
+    { name: "Gallery", href: "#gallery" },
+    { name: "Impact", href: "#impact" },
+    { name: "Help", href: "#help" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -18,12 +20,14 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-500 rounded-full flex items-center justify-center">
-              <Heart className="w-6 h-6 text-white" />
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/429zi153_Changing%20Lives.jpeg"
+              alt="Changing Lives Logo"
+              className="w-12 h-12 object-contain"
+            />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Leenda Bolden</h1>
-              <p className="text-sm text-coaching font-medium">Certified NLP & Life Coach</p>
+              <h1 className="text-xl font-bold text-gray-900">Changing Lives</h1>
+              <p className="text-sm text-gray-600">Snatched Beauties</p>
             </div>
           </div>
 
@@ -40,20 +44,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-6">
-            <div className="flex items-center space-x-4 text-sm text-gray-600">
-              <div className="flex items-center space-x-1">
-                <Phone className="w-4 h-4" />
-                <span>(323) 613-5153</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <Mail className="w-4 h-4" />
-                <span>Book Today</span>
-              </div>
-            </div>
-            <a href="#contact" className="btn-primary">
-              Book Session
+          {/* Donate Button */}
+          <div className="hidden md:flex">
+            <a href="#donate" className="btn-primary">
+              Donate Now
             </a>
           </div>
 
@@ -61,7 +55,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-purple-600 focus:outline-none"
+              className="text-gray-700 hover:text-purple-600 focus:outline-none focus:text-purple-600"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -71,7 +65,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -82,22 +76,13 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4 space-y-2">
-                <a
-                  href="tel:323-613-5153"
-                  className="flex items-center px-3 py-2 text-purple-600 font-medium"
-                >
-                  <Phone className="w-4 h-4 mr-2" />
-                  (323) 613-5153
-                </a>
-                <a
-                  href="#contact"
-                  className="btn-primary block text-center mt-4"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Book Your Session
-                </a>
-              </div>
+              <a
+                href="#donate"
+                className="btn-primary block text-center mt-4"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Donate Now
+              </a>
             </div>
           </div>
         )}
