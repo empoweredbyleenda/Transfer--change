@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="fade-in">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
             More Than Aid —{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
+            <span className="text-blue-600">
               We Change Lives
             </span>
           </h1>
@@ -30,9 +30,8 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href="#donate" className="btn-primary group">
+            <a href="#donate" className="btn-primary">
               Donate Now
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a href="#programs" className="btn-secondary">
               Learn More
