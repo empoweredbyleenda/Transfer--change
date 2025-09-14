@@ -129,7 +129,7 @@ const Contact = () => {
                           href={item.link}
                           target={item.link.startsWith('http') ? '_blank' : undefined}
                           rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-purple-300 hover:text-purple-400 font-medium text-sm mt-2 inline-block"
+                          className="text-pink-300 hover:text-pink-400 font-medium text-sm mt-2 inline-block"
                         >
                           {item.value}
                         </a>
