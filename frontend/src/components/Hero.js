@@ -9,7 +9,7 @@ const Hero = () => {
         <img
           src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/wk84hkl3_IMG_0996_Original.png"
           alt="Snatched Beauties - Changing Lives One Family at a Time"
-          className="w-full h-full object-contain bg-gradient-to-br from-pink-100 to-purple-100"
+          className="w-full h-full object-contain bg-blue-50"
         />
         <div className="hero-overlay absolute inset-0"></div>
       </div>
