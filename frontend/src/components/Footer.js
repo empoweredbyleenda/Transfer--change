@@ -58,7 +58,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-purple-200 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-pink-300 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   5710 W. Manchester Ave Ste 211 B<br />
                   Los Angeles, CA 90045
