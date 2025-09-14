@@ -184,11 +184,14 @@ frontend:
     file: "Footer.js, Contact.js, HowToHelp.js"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Replaced Footer with charity content, removed all coaching consultation text"
+      - working: true
+        agent: "testing"
+        comment: "✅ No 'book consultation' or 'book appointment' text found anywhere on the website"
 
   - task: "Remove Adventure Travel Gallery"
     implemented: true
