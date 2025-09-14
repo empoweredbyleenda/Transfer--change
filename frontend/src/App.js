@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Mission from "./components/Mission";
+import Founder from "./components/Founder";
 import Programs from "./components/Programs";
 import Gallery from "./components/Gallery";
 import Impact from "./components/Impact";
