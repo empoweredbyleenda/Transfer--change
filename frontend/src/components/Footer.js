@@ -155,7 +155,7 @@ const Footer = () => {
               © 2024 Changing Lives - Snatched Beauties. All rights reserved.
             </div>
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-sm text-gray-400 hover:text-purple-200 transition-colors">
+              <a href="#" className="text-sm text-gray-400 hover:text-pink-300 transition-colors">
                 Privacy Policy
               </a>
               <a href="#" className="text-sm text-gray-400 hover:text-purple-200 transition-colors">
