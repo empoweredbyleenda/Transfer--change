@@ -191,7 +191,7 @@ const HowToHelp = () => {
                     <label key={area} className="flex items-center">
                       <input
                         type="checkbox"
-                        className="mr-3 w-4 h-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500"
+                        className="mr-3 w-4 h-4 text-pink-300 border-gray-300 rounded focus:ring-pink-300"
                       />
                       <span className="text-gray-700">{area}</span>
                     </label>
