@@ -45,8 +45,8 @@ const Founder = () => {
                 <img 
                   src="/leenda-founder.jpeg" 
                   alt="Leenda B, Founder of Changing Lives" 
-                  className="w-full h-full object-cover"
-                  style={{objectPosition: '50% 50%'}}
+                  className="w-full h-full object-cover scale-75"
+                  style={{objectPosition: 'center top', transformOrigin: 'center center'}}
                   onError={(e) => {
                     // Fallback if photo doesn't load
                     e.target.style.display = 'none';
