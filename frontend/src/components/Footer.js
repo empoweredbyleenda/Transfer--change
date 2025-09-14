@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-pink-500 rounded-full flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
