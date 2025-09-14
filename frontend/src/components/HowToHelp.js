@@ -45,7 +45,7 @@ const HowToHelp = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            How You Can <span className="text-blue-600">Help</span>
+            How You Can <span className="text-gradient">Help</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Your support can change lives. Whether through donations, volunteering, or raising awareness, 
