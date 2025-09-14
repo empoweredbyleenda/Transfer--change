@@ -241,4 +241,4 @@ const HowToHelp = () => {
   );
 };
 
-export default Impact;
+export default HowToHelp;
