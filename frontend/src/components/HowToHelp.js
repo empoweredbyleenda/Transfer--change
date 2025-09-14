@@ -154,7 +154,7 @@ const HowToHelp = () => {
           </div>
 
           {/* Volunteer Form */}
-          <div id="volunteer" className="bg-blue-50 rounded-2xl p-8">
+          <div id="volunteer" className="bg-pink-50 rounded-2xl p-8">
             <div className="text-center mb-8">
               <HandHeart className="w-12 h-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Volunteer With Us</h3>
