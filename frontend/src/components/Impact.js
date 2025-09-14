@@ -95,7 +95,7 @@ const Impact = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Stories from Our <span className="text-blue-600">Community</span>
+              Stories from Our <span className="text-gradient">Community</span>
             </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Real stories from real people whose lives have been touched by our community programs.
