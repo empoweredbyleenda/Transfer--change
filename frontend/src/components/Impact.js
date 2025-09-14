@@ -84,7 +84,7 @@ const Impact = () => {
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</h3>
-                <h4 className="text-lg font-semibold text-purple-600 mb-3">{stat.label}</h4>
+                <h4 className="text-lg font-semibold text-blue-600 mb-3">{stat.label}</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">{stat.description}</p>
               </div>
             );
