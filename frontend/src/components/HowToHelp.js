@@ -220,7 +220,7 @@ const HowToHelp = () => {
               <p className="text-sm text-gray-600">Partner with us for employee volunteer programs</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-xl">
-              <Gift className="w-8 h-8 text-pink-600 mx-auto mb-4" />
+              <Gift className="w-8 h-8 text-pink-300 mx-auto mb-4" />
               <h4 className="font-semibold text-gray-900 mb-2">In-Kind Donations</h4>
               <p className="text-sm text-gray-600">Donate supplies, clothing, or services</p>
             </div>
