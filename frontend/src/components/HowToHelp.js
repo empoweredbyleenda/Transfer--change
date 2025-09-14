@@ -91,7 +91,7 @@ const HowToHelp = () => {
           {/* Donation Form */}
           <div id="donate" className="bg-blue-50 rounded-2xl p-8">
             <div className="text-center mb-8">
-              <Heart className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+              <Heart className="w-12 h-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Make a Donation</h3>
               <p className="text-gray-600">Every dollar goes directly to supporting families in need</p>
             </div>
