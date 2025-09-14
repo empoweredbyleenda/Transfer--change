@@ -159,7 +159,7 @@ const Gallery = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
+          <div className="bg-blue-50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Be Part of Our Story
             </h3>
