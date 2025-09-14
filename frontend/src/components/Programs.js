@@ -80,7 +80,7 @@ const Programs = () => {
                   />
                   <div className="absolute top-4 left-4">
                     <div className="w-12 h-12 bg-white/95 rounded-full flex items-center justify-center shadow-lg">
-                      <Icon className="w-6 h-6 text-pink-600" />
+                      <Icon className="w-6 h-6 text-gray-800" />
                     </div>
                   </div>
                 </div>
