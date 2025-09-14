@@ -70,7 +70,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-purple-600 block px-3 py-2 text-base font-medium"
+                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
