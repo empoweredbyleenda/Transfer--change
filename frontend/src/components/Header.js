@@ -4,58 +4,56 @@ import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navigation = [
+  const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Mission", href: "#mission" },
     { name: "Programs", href: "#programs" },
     { name: "Gallery", href: "#gallery" },
     { name: "Impact", href: "#impact" },
     { name: "Help", href: "#help" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "#contact" }
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+    <header className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_beauty-impact-1/artifacts/429zi153_Changing%20Lives.jpeg"
-              alt="Changing Lives Logo"
-              className="w-12 h-12 object-contain"
-            />
-            <div>
+            <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-lg">C</span>
+            </div>
+            <div className="text-left">
               <h1 className="text-xl font-bold text-gray-900">Changing Lives</h1>
-              <p className="text-sm text-gray-600">Snatched Beauties</p>
+              <p className="text-xs text-pink-600 font-medium">Snatched Beauties</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {navigation.map((item) => (
+            {navLinks.map((link) => (
               <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                key={link.name}
+                href={link.href}
+                className="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
-                {item.name}
+                {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Donate Button */}
-          <div className="hidden md:flex">
+          {/* CTA Button */}
+          <div className="hidden md:block">
             <a href="#donate" className="btn-primary">
               Donate Now
             </a>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-gray-700 hover:text-pink-600 focus:outline-none focus:text-pink-600"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -65,24 +63,22 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              {navigation.map((item) => (
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+              {navLinks.map((link) => (
                 <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                  key={link.name}
+                  href={link.href}
+                  className="text-gray-700 hover:text-pink-600 block px-3 py-2 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.name}
+                  {link.name}
                 </a>
               ))}
-              <a
-                href="#donate"
-                className="btn-primary block text-center mt-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Donate Now
-              </a>
+              <div className="px-3 py-2">
+                <a href="#donate" className="btn-primary block text-center">
+                  Donate Now
+                </a>
+              </div>
             </div>
           </div>
         )}

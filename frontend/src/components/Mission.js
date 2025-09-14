@@ -46,7 +46,7 @@ const Mission = () => {
                 key={index}
                 className="card-hover bg-white rounded-xl p-8 text-center shadow-lg border border-gray-100"
               >
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
@@ -58,15 +58,15 @@ const Mission = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-pink-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
               Together, We Build a Brighter Future
             </h3>
-            <p className="text-lg mb-6 text-blue-100">
+            <p className="text-lg mb-6 text-pink-100">
               Every contribution matters. Join us in building resilience and nurturing hope 
               in those who need it most.
             </p>
-            <a href="#help" className="btn-secondary bg-white text-blue-600 hover:bg-gray-100">
+            <a href="#help" className="btn-secondary bg-white text-pink-600 hover:bg-gray-100">
               Get Involved Today
             </a>
           </div>
