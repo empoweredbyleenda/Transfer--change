@@ -62,7 +62,7 @@ const HowToHelp = () => {
                 key={index}
                 className="card-hover bg-gray-50 rounded-xl p-8 text-center"
               >
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{way.title}</h3>
