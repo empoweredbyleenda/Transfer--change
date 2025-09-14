@@ -199,7 +199,7 @@ const HowToHelp = () => {
                 </div>
               </div>
 
-              <button type="submit" className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 w-full">
+              <button type="submit" className="bg-gray-800 hover:bg-black text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 w-full">
                 Sign Up to Volunteer
               </button>
 
