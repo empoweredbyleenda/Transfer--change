@@ -62,7 +62,7 @@ const Mission = () => {
             <h3 className="text-2xl font-bold mb-4">
               Together, We Build a Brighter Future
             </h3>
-            <p className="text-lg mb-6 text-pink-100">
+            <p className="text-lg mb-6 text-gray-300">
               Every contribution matters. Join us in building resilience and nurturing hope 
               in those who need it most.
             </p>
